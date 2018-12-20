@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 import { connect } from 'react-redux';
 
 const FlexChild = styled.div`
@@ -48,10 +48,10 @@ const Select = styled.select`
 `;
 
 
-const  TestType = props => {
+const TestType = props => {
 
 	const handleChange = (e) => {
-        props.getInputValue(e, 'testType');
+		props.getInputValue(e, 'testType');
 	}
 
 	const languages = ['Choose Type', 'HTML', 'CSS', 'JavaScript', 'Java', 'Python', 'C#', 'Ruby', 'Swift', 'React', 'Redux', 'C++', 'PHP', 'MySQL'];
@@ -59,21 +59,21 @@ const  TestType = props => {
 		<FlexChild>
 			<Select
 				value={props.value}
-				invalid = {props.isFilled(props.value)}
+				invalid={props.isFilled(props.value)}
 				onChange={handleChange}
 			>
 				{
 					languages.map((option, index) => (
-						<option 
+						<option
 							key={index + 1}
-							disabled = {index === 0 && props.value ? true : false}
-						> 
-							{option} 
+							disabled={index === 0 && props.value ? true : false}
+						>
+							{option}
 						</option>
 					))}
 			</Select>
 		</FlexChild>
-	);	
+	);
 }
 
 

@@ -1,5 +1,5 @@
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import React from 'react';
 
@@ -13,14 +13,14 @@ const TextDiv = styled.div`
 	font-size: 32px;
 `;
 
-export default function UpdateSuccessText (props) {
+export default function UpdateSuccessText(props) {
     return (
         <TextDiv>
-            Test updated successfully.{' '} 
-            <Link to='/tests'> 
-                <RouterLink >See All Tests. </RouterLink> 
+            Test updated successfully.{' '}
+            <Link to='/tests'>
+                <RouterLink >See All Tests. </RouterLink>
             </Link>
         </TextDiv>
-        
-	)
+
+    )
 }

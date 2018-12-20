@@ -1,6 +1,6 @@
-import styled  from 'styled-components';
+import styled from 'styled-components';
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const AllDiv = styled.div`
 	margin-top: 130px;
@@ -22,15 +22,15 @@ const LinkDiv = styled(NavLink)`
 	}
 `;
 
-export default function TestUpdateLink (props) {
-    return (
+export default function TestUpdateLink(props) {
+	return (
 		<AllDiv>
-			<LinkDiv to={`/${props.user.name}/profile`}> My Account </LinkDiv> 
-				/ {' '}
-			<LinkDiv to={`/${props.user.name}/tests`}> My Tests </LinkDiv> 
-				/ {' '}	
+			<LinkDiv to={`/${props.user.name}/profile`}> My Account </LinkDiv>
+			/ {' '}
+			<LinkDiv to={`/${props.user.name}/tests`}> My Tests </LinkDiv>
+			/ {' '}
 			<LinkDiv to={`/${props.user.name}/edit-test`}> Test Update  </LinkDiv>
 		</AllDiv>
-				
+
 	);
 }

@@ -59,10 +59,7 @@ const Login = ({email, pass, signIn, changeHandler, errorMessage, remember, clas
                             </div>
                             {/* <a href = "" >Forgot Password ? </a> */}
                         </div>
-                        
                         <input type="submit" value="LOGIN" className=' submit '/>
-                        
-                        }
                         <p>You can also log in with one of this accounts</p>
                         <div className='facgo'>
                             <Button fb><ImgIcon><img src={fbIcon} /></ImgIcon>Facebook</Button>

@@ -19,7 +19,7 @@ import HomePage from "./components/HomePage/HomePage";
 import { connect } from 'react-redux';
 import { getCompanies, getTests, getUsers } from './store/thunks/thunks';
 import * as firebase from "firebase";
-import Layout from "./Hoc/Layout";
+import Layout from "./components/Hoc/Layout";
 import PopUpTestAdded from './components/PopUps/PopUpTestAdded';
 import OneTestInfo from './components/TestInfoPage/OneTestInfo';
 import TestPassPanel from './components/TestPassPanel/TestPassPanel';
@@ -83,9 +83,6 @@ class App extends Component {
         this.props.getTests();
         this.props.getUsers();
     }
-
-
-    
     userTestAdded = () => {
         this.setState({ userTestAdded: !this.state.userTestAdded });
     }
@@ -161,7 +158,6 @@ class App extends Component {
                             )
                         })}
                         
-    
                         {this.props.tests && this.props.tests.map(item => {
                             this.passers = item.passers;
                             return (
