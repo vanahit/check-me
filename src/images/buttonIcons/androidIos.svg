@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 116">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #00253c;
+      }
+
+      .cls-2, .cls-3, .cls-9 {
+        fill: #00253c;
+      }
+
+      .cls-2 {
+        font-size: 20px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+      }
+
+      .cls-4 {
+        fill: #349886;
+      }
+
+      .cls-5 {
+        fill: #3db39e;
+      }
+
+      .cls-6 {
+        fill: #f4b459;
+      }
+
+      .cls-7 {
+        fill: #e2574c;
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+
+      .cls-10 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_403" data-name="Group 403" transform="translate(-1398 -3053)">
+    <g id="Rectangle_80" data-name="Rectangle 80" class="cls-1" transform="translate(1398 3119)">
+      <rect class="cls-10" width="170" height="50" rx="4"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="169" height="49" rx="3.5"/>
+    </g>
+    <g id="Rectangle_81" data-name="Rectangle 81" class="cls-1" transform="translate(1398 3053)">
+      <rect class="cls-10" width="170" height="50" rx="4"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="169" height="49" rx="3.5"/>
+    </g>
+    <text id="App_Store" data-name="App Store" class="cls-2" transform="translate(1498 3160)"><tspan x="-43.613" y="0">App Store</tspan></text>
+    <text id="Download_on_the" data-name="Download on the" class="cls-3" transform="translate(1499 3136)"><tspan x="-44.848" y="0">Download on the</tspan></text>
+    <g id="Group_253" data-name="Group 253" transform="translate(827 -74)">
+      <text id="Google_Play" data-name="Google Play" class="cls-2" transform="translate(680 3168)"><tspan x="-52.861" y="0">Google Play</tspan></text>
+      <text id="Download_on_the-2" data-name="Download on the" class="cls-3" transform="translate(672 3144)"><tspan x="-44.848" y="0">Download on the</tspan></text>
+    </g>
+    <g id="Group_254" data-name="Group 254" transform="translate(1128 -4)">
+      <g id="google-play" transform="translate(265.741 3066)">
+        <path id="Path_62" data-name="Path 62" class="cls-4" d="M12.384,13.689a3.309,3.309,0,0,0-.125.892v27.3a3.357,3.357,0,0,0,.122.881L27.159,28.243Z" transform="translate(0 -12.226)"/>
+        <path id="Path_63" data-name="Path 63" class="cls-5" d="M45.252,10.039,28,.441A2.527,2.527,0,0,0,26.06.062L40.9,14.164Z" transform="translate(-12.326 0)"/>
+        <path id="Path_64" data-name="Path 64" class="cls-6" d="M187.242,105.623l-4.605-2.562-4.717,4.468,4.8,4.568,4.481-2.461C189.392,108.389,188.594,106.383,187.242,105.623Z" transform="translate(-146.307 -91.53)"/>
+        <path id="Path_65" data-name="Path 65" class="cls-7" d="M25.65,171.476a2.5,2.5,0,0,0,1.98-.364l17.308-9.5-4.43-4.209Z" transform="translate(-11.96 -139.55)"/>
+      </g>
+      <rect id="Rectangle_82" data-name="Rectangle 82" class="cls-8" width="32" height="32" transform="translate(278 3066)"/>
+    </g>
+    <g id="Group_255" data-name="Group 255" transform="translate(1028 66)">
+      <g id="apple" transform="translate(354.125 3063)">
+        <path id="XMLID_229_" class="cls-9" d="M29.114,76.194c-2.483,4.356-.9,10.965,1.841,14.973,1.37,2,2.758,3.8,4.658,3.8l.109,0a5.7,5.7,0,0,0,2.162-.582,5.868,5.868,0,0,1,2.561-.614,5.52,5.52,0,0,1,2.438.594,5.12,5.12,0,0,0,2.335.566c2.141-.04,3.455-1.981,4.615-3.693a16.451,16.451,0,0,0,2.022-4.187l.008-.026a.244.244,0,0,0-.128-.3l-.018-.008A6.2,6.2,0,0,1,48,81.038,6.393,6.393,0,0,1,50.983,75.7l.023-.015a.245.245,0,0,0,.068-.342,6.922,6.922,0,0,0-5.463-3,4.763,4.763,0,0,0-.477-.024,9.441,9.441,0,0,0-3.429.866,5.467,5.467,0,0,1-1.643.5,5.33,5.33,0,0,1-1.7-.5,8.162,8.162,0,0,0-2.995-.769h-.076A7.332,7.332,0,0,0,29.114,76.194Z" transform="translate(0 -64.969)"/>
+        <path id="XMLID_230_" class="cls-9" d="M155.6,0a7.078,7.078,0,0,0-4.673,2.4,6.632,6.632,0,0,0-1.679,4.917.254.254,0,0,0,.232.22c.108.008.219.013.328.013a5.987,5.987,0,0,0,4.411-2.262A6.992,6.992,0,0,0,155.865.226.256.256,0,0,0,155.6,0Z" transform="translate(-109.885 0)"/>
+      </g>
+      <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-8" width="32" height="32" transform="translate(378 3062)"/>
+    </g>
+  </g>
+</svg>
