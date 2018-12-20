@@ -167,11 +167,9 @@ class App extends Component {
                             )
                         })}
 
-                        <Route path="/autorization-company" component={() => <AutorizationCompany  user={this.state.user} />}  />
-                        <Route path="/autorization-user" component={() => <AutorizationUser user={this.state.user}/>}  />
                         <Route path="/aboutUs/" component={AboutUs} />
-                        <Route path='/registration/user' component={AutorizationUser} />
-                        <Route path='/registration/company' component={AutorizationCompany} />
+                        <Route path='/registration/user' component={() => <AutorizationUser userRegistration user={this.state.user} />} />
+                        <Route path='/registration/company' component={() => <AutorizationCompany companyRegistration  user={this.state.user}/>} />
                         <Route path="/users/" component={AllUsers} />
                         <Route path="/companies/" component={() => <AllCompanies addCurrentItem={this.addCurrentItem} />} />
                         <Route

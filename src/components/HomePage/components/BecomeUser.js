@@ -75,7 +75,7 @@ const BecomeUser = () => {
                     <CheckBox>Recieve Invitations from Leading Companies</CheckBox>
 
                     <GetStartedDiv>
-                        <Button width={'228px'} to='/autorization-user'>
+                        <Button width={'228px'} to='/registration/user'>
                             BECOME USER
                                 </Button>
                     </GetStartedDiv>

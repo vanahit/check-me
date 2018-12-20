@@ -73,7 +73,7 @@ const BecomeCompany = () => {
                     <CheckBox>Invite the Best Users to Your Company</CheckBox>
 
                     <GetStartedDiv>
-                        <Button width={'228px'} to='/autorization-company'>
+                        <Button width={'228px'} to='/registration/company'>
                             BECOME COMPANY
                                 </Button>
                     </GetStartedDiv>

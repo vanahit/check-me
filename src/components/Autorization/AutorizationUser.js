@@ -7,8 +7,26 @@ import { Redirect } from "react-router";
 import { connect } from 'react-redux';
 
 const MarginDiv = styled.div`
-    margin: 130px auto;
+    margin: 30px auto;
 `;
+const SelectedTab = styled.button`
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #4F9DA6;
+    border-bottom: 0;
+    background-color: #4F9DA6;
+    color: white;
+`;
+const SwitchButtonsDiv = styled.div`
+    width: 1200px;
+    border-bottom: 1px solid #4F9DA6;
+    margin: auto;
+    margin-top: 177px;
+`;
+
 class AutorizationUser extends Component {
 
     constructor(props) {
@@ -37,7 +55,7 @@ class AutorizationUser extends Component {
     }
 
 
-    checkWichUser (id) {
+    checkWichUser(id) {
         for (let i = 0; i < this.props.companies.length; i++) {
             if (id === this.props.companies[i].id) {
                 return 'company';
@@ -63,40 +81,44 @@ class AutorizationUser extends Component {
         e.preventDefault();
         let self = this;
         firebase.auth().setPersistence(firebase.auth.Auth.Persistence[this.state.remember])
-        .then(function() {
-        return firebase.auth().signInWithEmailAndPassword(self.state.email, self.state.pass);
-        })
-        .then(user => {
-            if (self.checkWichUser(user.uid) === 'user') {
-                localStorage.setItem("current", "user");
-            } else {
-                this.setState({errorMessage: 'There is no such user please check your email and password'});
-                this.logOut();
-            }
-        })
-        .catch(err => {
-            this.setState({errorMessage: 'There is no such user please check your email and password'})
-        });
+            .then(function () {
+                return firebase.auth().signInWithEmailAndPassword(self.state.email, self.state.pass);
+            })
+            .then(user => {
+                if (self.checkWichUser(user.uid) === 'user') {
+                    localStorage.setItem("current", "user");
+                } else {
+                    this.setState({ errorMessage: 'There is no such user please check your email and password' });
+                    this.logOut();
+                }
+            })
+            .catch(err => {
+                this.setState({ errorMessage: 'There is no such user please check your email and password' })
+            });
     }
 
     render() {
         return (
-            <MarginDiv>
-                {(localStorage.getItem("current") === "user") && this.props.user ?
-                    <Redirect to={`/${this.props.user.firstName}${this.props.user.lastName}/profile`} /> :
-                    <div className='container'>
-                        <Login
-                            classForBg={'user-registration'}
-                            login={this.state.pass}
-                            email={this.state.email}
-                            changeHandler={this.changeHandler}
-                            signIn={this.signIn.bind(this)}
-                            errorMessage={this.state.errorMessage}
-                            remember={this.remember} />
-                        <UserRegistration />
-                    </div>
-                }
-            </MarginDiv>
+
+            (localStorage.getItem("current") === "user") && this.props.user ?
+                <Redirect to={`/${this.props.user.firstName}${this.props.user.lastName}/profile`} /> :
+                <>
+                    {this.props.userRegistration && <SwitchButtonsDiv><SelectedTab>USER</SelectedTab></SwitchButtonsDiv>}
+                    <MarginDiv>
+                        <div className='container'>
+                            <Login
+                                classForBg={'user-registration'}
+                                login={this.state.pass}
+                                email={this.state.email}
+                                changeHandler={this.changeHandler}
+                                signIn={this.signIn.bind(this)}
+                                errorMessage={this.state.errorMessage}
+                                remember={this.remember} />
+                            <UserRegistration />
+                        </div>
+
+                    </MarginDiv>
+                </>
         );
     }
 }

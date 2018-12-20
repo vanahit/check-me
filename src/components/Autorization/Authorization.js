@@ -37,7 +37,7 @@ class Authorization extends Component {
                      <Redirect to={`/${this.props.user.name}/profile`}/> :
                      (this.props.user && localStorage.getItem("current") === "user") ?
                     <Redirect to={`/${this.props.user.firstName}${this.props.user.lastName}/profile`}/> :
-                    <div className='switch-buttons'>
+                    <div>
                         <p></p>
                         <div className='switch-buttons'>
                         <button className={this.state.selectedTab === 'company' ? 'selected-tab' : null}
