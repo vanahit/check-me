@@ -27,7 +27,7 @@ const FlexRow = styled.div`
 	width: ${props => props.width || '100%'};
 	box-sizing: border-box;
 
-	@media screen and (max-width: 1190px) {
+	@media screen and (max-width: 850px) {
         flex-direction: column;
         text-align: center;
         min-width: 100%;
@@ -50,6 +50,7 @@ const LoginLogout = styled(NavLink)`
         text-decoration: underline;
     }
     @media screen and (max-width: 1198px) {
+        text-align: center;
         flex-direction: column;
         border: 0;
 	}
@@ -68,6 +69,7 @@ const MyAccount = styled(NavLink)`
     text-transform: uppercase;
 
     :active, :hover, :focus {
+        text-align: center;
         color: #FFAD5A;
         fill: #FFAD5A;
         text-decoration: underline;
@@ -79,10 +81,6 @@ const MyAccount = styled(NavLink)`
 	position: relative;
 	box-sizing: border-box;
 	width: ${props => props.width || ''};   
-	@media screen and (max-width: 1190px) {
-		margin: 10px 5px;
-		min-width: 98%;
-	}
 `;
 const IconSizes = styled.span`
     display: inline-block;

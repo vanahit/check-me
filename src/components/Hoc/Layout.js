@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const Main = styled.div`
     min-height: 850px;
-    @media screen and (max-width: 1190px) {
-        margin-top: 400px;
+    @media screen and (max-width: 850px) {
+        margin-top: 187px;
     }
     box-sizing: border-box;
 `;

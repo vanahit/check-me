@@ -47,9 +47,11 @@
     width: 1200px;
     border-bottom: 1px solid #4F9DA6;
     margin: auto;
-    margin-top: 177px;
+    padding-top: 177px;
      
 }
+
+
 
 .switch-buttons p {
     tab-size: 14px;
@@ -99,10 +101,11 @@
     padding: 30px;
     align-items: center;
     width: 568px;
-    height: 750px;
+    min-height: 820px;
     border: 1px solid black;
     position: relative;
     background-size: cover;
+    box-sizing: border-box;
 
 }
 .company-registration {
@@ -725,6 +728,13 @@ img {
 }
 
 
+@media screen and (max-width: 850px) {
+    .container-fluid, .tabBar, .switch-buttons {
+        padding-top: 30px;
+    }
+}
+
+
 /*Animation*/
 
 /*slide enter*/
@@ -1309,7 +1319,7 @@ input[type='file']::-webkit-file-upload-button {
         width: 100%;
     }
     .image-content{
-        left: 50%;
+        left: 25%;
         transform: translateX(-50%);
     }
 }
